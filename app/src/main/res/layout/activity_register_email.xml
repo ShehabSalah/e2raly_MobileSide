@@ -1,0 +1,176 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginbackground2"
+    tools:context=".RegisterActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- This FrameLayout insets its children based on system windows using
+        android:fitsSystemWindows. -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Login progress -->
+            <ProgressBar
+                android:id="@+id/login_progress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <RelativeLayout
+                    android:id="@+id/email_login_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!--***********************************************************-->
+                    <EditText
+                        android:id="@+id/FName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_FName"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="#FFF"
+                        android:layout_below="@+id/emailRegisterQuote"
+                        android:singleLine="true"
+                        android:padding="15dp"
+                        android:textColorHint="#ffffff"
+                        android:background="#51ffffff"
+                        android:layout_marginTop="30dp"/>
+                    <EditText
+                        android:id="@+id/LName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_LName"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="#FFF"
+                        android:layout_below="@+id/FName"
+                        android:singleLine="true"
+                        android:padding="15dp"
+                        android:textColorHint="#ffffff"
+                        android:background="#51ffffff"
+                        android:layout_marginTop="10dp"/>
+
+                    <!--***********************************************************-->
+
+
+                    <ImageView
+                        android:id="@+id/registerEmailLogo"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="238dp"
+                        android:layout_height="127dp"
+                        android:layout_marginTop="56dp"
+                        android:src="@mipmap/emailaddresslogo"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"/>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/loginprogressBar2"
+                        android:layout_below="@+id/emailRegisterQuote"
+                        android:layout_marginTop="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="invisible"
+                        android:indeterminate="false" />
+
+                    <EditText
+                        android:id="@+id/RegisterEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textColor="#FFF"
+                        android:layout_below="@+id/LName"
+                        android:singleLine="true"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="#ffffff"
+                        android:background="#51ffffff"/>
+                    <!--********************************************-->
+                    <EditText
+                        android:id="@+id/pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textColor="#FFF"
+                        android:layout_below="@+id/RegisterEmail"
+                        android:singleLine="true"
+                        android:padding="15dp"
+                        android:textColorHint="#ffffff"
+                        android:background="#51ffffff"
+                        android:layout_marginTop="10dp"/>
+                    <EditText
+                        android:id="@+id/pass2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_pass"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textColor="#FFF"
+                        android:layout_below="@+id/pass"
+                        android:singleLine="true"
+                        android:padding="15dp"
+                        android:textColorHint="#ffffff"
+                        android:background="#51ffffff"
+                        android:layout_marginTop="10dp"/>
+                    <!--********************************************-->
+
+                    <ImageView
+                        android:id="@+id/email_sign_in_button"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_below="@+id/pass2"
+                        android:src="@mipmap/finish_register"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="30dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Please Add Your Information"
+                        android:id="@+id/emailRegisterQuote"
+                        android:textColor="#FFF"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/registerEmailLogo"
+                        android:layout_centerHorizontal="true" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+

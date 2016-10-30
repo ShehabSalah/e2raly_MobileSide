@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="debug"><source path="/Users/shehab92/Documents/my_google_work/e2raly/lib/opencv/build/intermediates/bundles/debug/assets"/></dataSet><dataSet config="main"><source path="/Users/shehab92/Documents/my_google_work/e2raly/lib/opencv/src/androidTest/assets"/><source path="/Users/shehab92/Documents/my_google_work/e2raly/lib/opencv/build/generated/assets/shaders/androidTest/debug"/></dataSet></merger>

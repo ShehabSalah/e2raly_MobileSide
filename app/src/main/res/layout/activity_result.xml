@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@mipmap/loginbackground2"
+    tools:context=".ResultActivity"
+    android:keepScreenOn="true">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_height="match_parent"
+            android:background="#7dffffff">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingBottom="60dp"
+                android:id="@+id/scrollView">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="100dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Large Text"
+                        android:paddingTop="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="120dp"
+                        android:id="@+id/message"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#010101" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Large Text"
+                        android:padding="20dp"
+                        android:textDirection="anyRtl"
+                        android:id="@+id/result"
+                        android:gravity="right"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#010101" />
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="100dp"
+                        android:layout_gravity="bottom|center_horizontal">
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Save"
+                            android:id="@+id/Save_to_History"
+                            android:layout_gravity="center_vertical"
+                            android:background="#72ffffff" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/fullscreen_header_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:scaleType="fitCenter"
+            tools:ignore="UselessParent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/imageView5"
+                android:scaleType="fitXY"
+                android:layout_marginTop="0dp"
+                android:src="@mipmap/header"
+                android:paddingRight="0dp"
+                android:paddingLeft="0dp"
+                android:layout_gravity="left|right"
+                android:contentDescription="@string/header" />
+
+        </LinearLayout>
+        <LinearLayout android:id="@+id/fullscreen_content_controls2"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:scaleType="fitCenter"
+            android:background="#d1242424" android:orientation="horizontal"
+
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/trans"
+                android:id="@+id/translateButton"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_vertical"
+                android:background="#00ffffff"
+                android:textColor="#a7ffffff" />
+           <!-- <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/mapButton"
+                android:src="@mipmap/googlemapslogo2014"
+                android:scaleType="fitCenter"
+                android:baselineAlignBottom="true"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginBottom="0dp" />-->
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

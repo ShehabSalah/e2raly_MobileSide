@@ -1,0 +1,49 @@
+<RelativeLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:contect=".MapsActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Text_search"
+        android:text="Location"
+        android:textSize="25dp"
+        android:layout_gravity="left|center_vertical"
+        android:layout_above="@+id/map"
+        android:textIsSelectable="false" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_above="@+id/map"
+        android:layout_toRightOf="@+id/Text_search"
+        android:layout_toEndOf="@+id/Text_search" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:id="@+id/btn_home"
+        android:onClick="geoLocate"
+        android:layout_gravity="right|center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:layout_below="@+id/btn_home"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+
+
+
+</RelativeLayout>

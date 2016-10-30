@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginbackground2">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView5"
+            android:background="#7dffffff">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/scrollView">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="100dp">
+                    <TextView
+                        android:id="@+id/translatableText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/translation"
+                        android:textSize="25sp"
+                        android:textColor="#3d3d3d" />
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/fullscreen_header_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:scaleType="fitCenter"
+            tools:ignore="UselessParent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/imageView5"
+                android:scaleType="fitXY"
+                android:layout_marginTop="0dp"
+                android:src="@mipmap/header"
+                android:paddingRight="0dp"
+                android:paddingLeft="0dp"
+                android:layout_gravity="left|right" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

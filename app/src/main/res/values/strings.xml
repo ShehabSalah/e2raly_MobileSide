@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">e2raly</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">e2raly</string>
+    <string name="image">imageView</string>
+    <string name="translation">Translating…</string>
+    <string name="translation_error">No text recognized to translate</string>
+    <string name="images">logo1</string>
+    <string name="title_activity_main22">e2raly</string>
+    <string name="title_activity_fullscreen">Text Recognition</string>
+    <string name="dummy_button">Back</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="internet_txt">internet access</string>
+    <string name="recognize">Start Recognizing The Text...</string>
+    <string name="upload">Start uploading...</string>
+    <string-array name="camera">
+        <item>Capture Text</item>
+        <item>Capture Address</item>
+    </string-array>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_FName">First Name</string>
+    <string name="prompt_LName">Last Name</string>
+    <string name="prompt_pass">Re-enter Password</string>
+    <string name="facebook_app_id">943884842354596</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="forgot">Forgot your login details? Get help signing in.</string>
+    <string name="newAccount">Don’t have an account? Sign up.</string>
+    <string name="LoginTxt">Already have an account? Log in.</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_register_name">Register</string>
+    <string name="title_activity_user__history">History</string>
+
+    <string name="title_activity_single_history_item">History</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">Language</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Choose Language...</string>
+    <string-array name="pref_example_list_titles">
+        <item>English</item>
+        <item>Arabic</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="trans">Translate</string>
+    <string name="header">header</string>
+</resources>
